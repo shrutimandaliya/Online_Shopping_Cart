@@ -43,7 +43,7 @@
 ![List Books Desktop View](readme_images/admin_login.png)
 
 ###### Register
-![Star Rating Tooltip on Hover Desktop](readme_images/register.png)
+![Star Rating Tooltip on Hover Desktop](readme_images/register.PNG)
 
 <br />
 
@@ -51,18 +51,18 @@
 
 <div style="margin: 0 auto">
     <!-- <img src="readme_images/search-books.png" alt="Search Books"/> -->
-    <img src="readme_images/products.png" alt="Products"/>
+    <img src="readme_images/products.PNG" alt="Products"/>
     <!-- <img src="readme_images/search-books-by-authors.png" alt="Search Book Displays by Authors"/> -->
 </div>
 
 ###### Products in Grid View (Desktop)
-![Checkout Book Desktop View](readme_images/gridView.png)
+![Checkout Book Desktop View](readme_images/gridView.PNG)
 
 <br/><br/><br/>
 
 ###### Add to Cart
 <div style="margin: 0 auto">
-    <img src="readme_images/Cart.png" alt="List Books Mobile View"/>
+    <img src="readme_images/Cart.PNG" alt="List Books Mobile View"/>
     <!-- <img src="readme_images/checkout-book-mobile.png" alt="Checkout Book Mobile"/> -->
 </div>
 

@@ -1,0 +1,82 @@
+SELECT `total_emp_points` FROM `kpi_calculate` WHERE curr_date='2018-09-01' AND user_id = '2'
+DROP PROCEDURE IF EXISTS `kpi_total_point`;
+delimiter ;;
+CREATE PROCEDURE `kpi_total_point` (IN idx int)
+BEGIN
+	SELECT total_emp_points FROM kpi_calculate WHERE user_id = idx;
+END
+ ;;
+delimiter ;
+
+
+
+DROP PROCEDURE IF EXISTS `kpi_total_point`;
+delimiter ;;
+CREATE PROCEDURE `kpi_total_point` (IN idx int IN curr_date date)
+BEGIN
+	SELECT total_emp_points FROM kpi_calculate WHERE user_id = idx AND curr_date = curr_date;
+END
+ ;;
+delimiter ;
+
+
+DROP PROCEDURE IF EXISTS `kpi_total_point`;
+delimiter ;;
+CREATE PROCEDURE `kpi_total_point` (IN idx int,curr_date date)
+BEGIN
+	SELECT total_emp_points FROM kpi_calculate WHERE user_id = idx AND curr_date = curr_date;
+END
+ ;;
+delimiter ;
+
+
+
+DROP PROCEDURE IF EXISTS `kpi_total_man_point`;
+delimiter ;;
+CREATE PROCEDURE `kpi_total_man_point` (IN idx int,curr_date date)
+BEGIN
+	SELECT total_man_points FROM kpi_calculate WHERE user_id = idx AND curr_date = curr_date;
+END
+ ;;
+delimiter ;
+
+DROP PROCEDURE IF EXISTS `kpi_total_emp_point`;
+delimiter ;;
+CREATE PROCEDURE `kpi_total_emp_point` (IN idx int,currDate date)
+BEGIN
+	SELECT total_emp_points FROM kpi_calculate WHERE user_id = idx AND curr_date = currDate;
+END
+ ;;
+delimiter ;
+
+CALL kpi_total_emp_point(4,'2018-09-01');
+
+DROP PROCEDURE IF EXISTS `kpi_total_man_point`;
+delimiter ;;
+CREATE PROCEDURE `kpi_total_man_point` (IN id int,IN currDate date)
+BEGIN
+	SELECT total_man_points FROM kpi_calculate WHERE user_id = id AND curr_date = currDate;
+END
+ ;;
+delimiter ;
+
+
+DROP PROCEDURE IF EXISTS `kpi_total_man_point_new`;
+delimiter ;;
+CREATE PROCEDURE `kpi_total_man_point_new` (IN idx int,IN new_date date)
+BEGIN
+	SELECT total_man_points FROM kpi_calculate WHERE user_id = idx AND curr_date = new_date;
+END
+ ;;
+delimiter ;
+
+
+
+DROP PROCEDURE IF EXISTS `kpi_total_point`;
+delimiter ;;
+CREATE PROCEDURE `kpi_total_man_point` (IN id int,IN currDate date)
+BEGIN
+	SELECT total_man_points,total_emp_points FROM kpi_calculate WHERE user_id = id AND curr_date = currDate;
+END
+ ;;
+delimiter ;
